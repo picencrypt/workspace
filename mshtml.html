@@ -754,7 +754,7 @@ function dlall(){
 function createhref(blob){
   let name=randomname()+"-"+(blob.name?blob.name:"tpwjj.png")
   let span=document.createElement("span")
-  span.innerText="保存"
+  span.innerText="Save"
   span.style.color="#1080a0"
   span.dlstatus=0
   span.dlname=name
@@ -769,24 +769,24 @@ function createhref(blob){
       
       span.dlstatus=1
       span.style.color="#666"
-      span.innerText="保存中:0%"
+      span.innerText="Saving:0%"
       
       stepsavefile(blob,"Download/tpwjj",name,(p)=>{
         if(dlmanager.dlist.remain==1){
           dlupdatep(p)
         }
-        span.innerText="保存中:"+Math.floor(p*100)+"%"
+        span.innerText="Saving:"+Math.floor(p*100)+"%"
       }).then(()=>{
         //resolve
         span.dlstatus=2
-        span.innerText="保存成功"
+        span.innerText="Succeed"
         broadcast("Download/tpwjj")
         dlmanager.dlist.remain--
         dlupdate()
       },()=>{
         //reject
         span.dlstatus=0
-        span.innerText="保存失败"
+        span.innerText="Failed"
       })
       
     }
@@ -795,13 +795,13 @@ function createhref(blob){
   return span
 }
 function dlupdate(){
-  dlmanager.dlist.div.innerText="剩余:"+dlmanager.dlist.remain
+  dlmanager.dlist.div.innerText="Remain:"+dlmanager.dlist.remain
   if(dlmanager.dlist.remain==0){
-    dlmanager.dlist.div.innerHTML="保存成功"
+    dlmanager.dlist.div.innerHTML="Succeed"
   }
 }
 function dlupdatep(p){
-  dlmanager.dlist.div.innerText="剩余:"+dlmanager.dlist.remain+","+Math.floor(p*100)+"%"
+  dlmanager.dlist.div.innerText="Remain:"+dlmanager.dlist.remain+","+Math.floor(p*100)+"%"
 }
 function randomname(){
   return Date.now().toString(36).slice(-8)+Math.random().toString(36).slice(2,7)
@@ -880,7 +880,7 @@ function randomname(){
         
         /*
         let a=document.createElement("a")
-        a.innerText="保存"
+        a.innerText="Save"
         a.href=src
         a.download=b.name
         */
