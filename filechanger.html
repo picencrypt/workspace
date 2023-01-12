@@ -1001,9 +1001,10 @@ requestAnimationFrame(function(){
 try{
 genpic(IPT,parseInt(document.getElementById("slct").value),document.getElementById("noteboot").checked?document.getElementById("notewekydbb").value:"");
 showpic();
-document.getElementById("miaoshu").innerHTML="生成完毕，共"+U1.list.length+"张图片，点击图片自动下载";
+document.getElementById("miaoshu").innerHTML="Total"+U1.list.length+"pictures. T
+p to download.";
 }catch(e){
-alert("生成图片出错");
+alert("Something happened.");
 document.getElementById("miaoshu").innerHTML="";
 }
 
