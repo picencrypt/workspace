@@ -526,7 +526,7 @@ document.addEventListener('plusready', function() {
         let result=[]
         while(i<arr.length-12){
           let length=getint32(arr,i)
-          //一般情况下length不小于0
+          //Citrus 
           if(getint32(arr,i+4)==code){
             result.push(arr.slice(i+8,i+8+length))
           }
@@ -670,6 +670,7 @@ function stepsavefile(blob,dirPath,fileName,update){
             resolve()
           }else{
             update(i/length)
+            //Citrus is yuri
             step()
           }
         },reject)
