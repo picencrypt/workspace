@@ -275,100 +275,100 @@ pnn_>c+<1I-\-J               mXJJmU|fCUUCwj|\|jJUUQwxttftxQLLLQqYxxxrrLCJJJ0pn\\
 <title>PicEncrypt</title>
 </head>
 <body oncontextmenu="return false" style="overflow-x:hidden">
-<style>
-input{
-background:#fff;
-border:3px solid #000; 
-height:1rem;
-border-radius:5px;
- box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
- text-decoration:none;
-}
-button{
-background:rgb(255, 0, 0);
-border:3px solid rgb(255, 0, 0);
- box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
- text-decoration:none;
-border-radius:8px;
-height:2.5rem;
-width:10rem;
-font-size: 16px;
--webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-}
-button:hover{
-background:rgb(85, 0, 0);
-border:3px solid rgb(85, 0, 0);
- box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
- text-decoration:none;
-
-border-radius:8px;
-height:2.5rem;
-width:10rem;
-font-size: 16px;
-text-decoration:none;
-}
-select{
-background:#fc0;
-border:3px solid #fc0;
-border-radius:5px;
-height:2rem;
-width:10rem;
- box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
- text-decoration:none;
-}
-</style>
-<style>
-    @media (prefers-color-scheme: dark) {
-      :root {
+  <style>
+    input{
+    background:#fff;
+    border:3px solid #000; 
+    height:1rem;
+    border-radius:5px;
+     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+     outline:none;
+    }
+    button{
+    background:rgb(255, 0, 0);
+    border:3px solid rgb(255, 0, 0);
+     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    
+    border-radius:8px;
+    height:2.5rem;
+    width:10rem;
+    font-size: 16px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+        transition-duration: 0.4s;
+        outline:none;
+    }
+    button:hover{
+    background:rgb(85, 0, 0);
+    border:3px solid rgb(85, 0, 0);
+     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    
+    border-radius:8px;
+    height:2.5rem;
+    width:10rem;
+    font-size: 16px;
+    outline:none;
+    }
+    select{
+    background:#fc0;
+    border:3px solid #fc0;
+    border-radius:5px;
+    height:2rem;
+    width:10rem;
+     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+     outline:none;
+    }
+    </style>
+    <style>
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #262626;
+          --textColor: #444;
+          --borderColor: #2c2c3a;
+          --primary: #24acf2;
+        }
+      }
+  
+      @media (prefers-color-scheme: light) {
+        :root {
+          --bg: #fff;
+          --textColor: #aaa;
+          --borderColor: #2c2c3a;
+          --primary: #1bcfe7;
+        }
+      }
+  
+      :root[data-theme="light"] {
+        --bg: #efefef;
+        --textColor: #aaa;
+        --borderColor: #2c2c3a;
+        --primary: #1bcfe7;
+      }
+  
+      :root[data-theme="dark"] {
         --bg: #262626;
         --textColor: #444;
         --borderColor: #2c2c3a;
         --primary: #24acf2;
       }
-    }
-
-    @media (prefers-color-scheme: light) {
-      :root {
-        --bg: #fff;
-        --textColor: #aaa;
-        --borderColor: #2c2c3a;
-        --primary: #1bcfe7;
+  
+      * {
+        margin: 0;
+        padding: 0;
       }
-    }
-
-    :root[data-theme="light"] {
-      --bg: #efefef;
-      --textColor: #aaa;
-      --borderColor: #2c2c3a;
-      --primary: #1bcfe7;
-    }
-
-    :root[data-theme="dark"] {
-      --bg: #262626;
-      --textColor: #444;
-      --borderColor: #2c2c3a;
-      --primary: #24acf2;
-    }
-
-    * {
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      background-color: var(--bg);
-      color: var(--textColor);
-    }
-
-    .flex {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      width: 100vw;
-    }
-  </style>
+  
+      body {
+        background-color: var(--bg);
+        color: var(--textColor);
+      }
+  
+      .flex {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        width: 100vw;
+      }
+    </style>
   <script>
     function changeMode() {
       console.log("123");
@@ -606,7 +606,7 @@ width:10rem;
             id="tspan970">PicEncrypt</tspan></text>
      </g>
    </svg>
-   <a href="index.html" class="pathlink">PicEncrypt</a> <nobr style="color:#888;font-size:36px;">&nbsp;&gt;&nbsp;Convert Files to pictures</nobr>
+   <a href="index.html" class="pathlink">PicEncrypt</a> <nobr style="color:#888;font-size:36px;">&nbsp;&gt;&nbsp;FilePainter</nobr>
 <style>
   .pathlink {color:#888;font-size:36px;text-decoration:none;}
   </style>
@@ -624,7 +624,7 @@ width:10rem;
 </summary>
 <br />
 <input style="border:0px;display:none" type="file" onchange="ipt()" id="ipt">
-<button onclick="select8wekyb3d8bbwe()">Open</button>
+<button style="color:#fff;" onclick="select8wekyb3d8bbwe()">Open</button>
 <br />
 <br />
 <br />
@@ -648,7 +648,7 @@ width:10rem;
 <input type="checkbox" checked="true" id="noteboot">Enable</input>
 <br />
 <br />
-<button onclick="gen()"> Convert</button>
+<button style="color:#fff;" onclick="gen()"> Convert</button>
 <div id="miaoshu" style="padding:8px 0;text-align:center">
 </div>
 <div id="imgwrap"></div>
@@ -659,7 +659,7 @@ width:10rem;
 <summary class="headw">
 Extract the file from a picture</summary>
 <span> </span><input style="border:0px;display:none" type="file" onchange="opt()" id="opt" multiple="multiple"><br />
-<button onclick="selectend8wekyb3d8bbwe()">Open</button>
+<button style="color:#fff;" onclick="selectend8wekyb3d8bbwe()">Open</button>
 <div id="loading" style="text-align:center;display:none;padding:8px 0">
 Reading...
 </div>
@@ -930,7 +930,7 @@ readpicII(imgdtlist);
 
 }
 }else{
-alert("解析图片出错")
+alert("Error")
 }
 document.getElementById("loading").style.display="none"
 }
@@ -994,17 +994,16 @@ return c
 
 
 function gen(){
-document.getElementById("miaoshu").innerHTML="正在生成中";
+document.getElementById("miaoshu").innerHTML="Processing";
 requestAnimationFrame(function(){
 requestAnimationFrame(function(){
    
 try{
 genpic(IPT,parseInt(document.getElementById("slct").value),document.getElementById("noteboot").checked?document.getElementById("notewekydbb").value:"");
 showpic();
-document.getElementById("miaoshu").innerHTML="Total"+U1.list.length+"pictures. T
-p to download.";
+document.getElementById("miaoshu").innerHTML="Total"+U1.list.length+"pictures, click to save.";
 }catch(e){
-alert("Something happened.");
+alert("Error");
 document.getElementById("miaoshu").innerHTML="";
 }
 
@@ -1072,7 +1071,7 @@ IMGLIST[i].src=U3.add(ofile[i]);
 
 function dataURLtoBlob(dataurl) {
 var arr = dataurl.split(',');
-//注意base64的最后面中括号和引号是不转译的   
+   
 var _arr = arr[1].substring(0,arr[1].length-2);
 var mime = arr[0].match(/:(.*?);/)[1],
 bstr =atob(_arr),
@@ -1091,28 +1090,19 @@ return arr.map(a=>a.join(sp2)).join(sp1);
 
 
 function genpic(img,slicesize,info){
-/*
-0 版本信息
-A 文件名
-B mime类型
-C 总长(36
-T 时间(36进制
-M 总分片数(36
-N 当前分片序号(36
-S 当前分片文件长度(36
-*/
+//Citrus
 let n=Math.ceil(img.fileabf.byteLength/slicesize)
 let l=[
-["0","0.1.2","Encoded by FiletoPic Made by Ybzjdsd"],
+["0","0.1.2","Encoded by PicEncrypt"],
 ["A",img.filename],
 ["B",img.filetype],
 ["T",Date.now().toString(36)],
 ["C",img.fileabf.byteLength.toString(36)],
 ["M",n.toString(36)]
 ];
-let s=img.fileabf.byteLength;//总长
-let ss=parseInt(s/n);//平均每片长取整
-let sss=s%ss;//多出长度
+let s=img.fileabf.byteLength;
+let ss=parseInt(s/n);
+let sss=s%ss;
 let c=0;
 let a=0;
 let info1="";
@@ -1179,11 +1169,11 @@ let cv=document.createElement("canvas");
 let cvd=cv.getContext("2d");
 let imgdt;
 let x=0;
-let s="";//信息表 字符串状态
-let sarr=[];//信息表 数组状态
-let l={};//信息表 对象状态
-let ll=[];//文件array
-let n=0;//文件长度
+let s="";
+let sarr=[];
+let l={};
+let ll=[];
+let n=0;
 cv.width=wid;
 cv.height=hit;
 cvd.drawImage(img,0,0);

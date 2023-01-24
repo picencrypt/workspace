@@ -270,7 +270,7 @@
 
 <title>PicEncrypt</title>
 </head>
-<body oncontextmenu="return false" style="overflow-x:hidden">
+<body>
    <style>
       input{
       background:#fff;
@@ -774,9 +774,9 @@
 <button style="color:#fff;" onclick="encrypt8wekyb3d8bbwe()"> ← </button><nobr style="font-size:34px;"> | </nobr><button style="color:#fff;" onclick="decrypt8wekyb3d8bbwe()"> → </button> <br> <br> <button style="color:#fff;" onclick="restore8wekyb3d8bbwe()"> ↺ </button>
 <br />
 <br />
-<a href="./mshtml.html" class="pathref">Hide an image</a>
+<a href="./mshtml.html" class="pathref">PicFolder</a>
 <br />
-<a href="./filechanger.html"class="pathref">Convert files to pictures</a>
+<a href="./filechanger.html"class="pathref">FilePainter</a>
 <br />
  
 <div id="imgwrap">
@@ -890,8 +890,8 @@ d = AddUnsigned(d, DD);
 var temp = WordToHex(a)+WordToHex(b)+WordToHex(c)+WordToHex(d);    
 return temp.toUpperCase();    
 }    
-function RotateLeft(l指令, iShiftBits) {    
-return (l指令 << iShiftBits) | (l指令 >>> (32-iShiftBits));    
+function RotateLeft(lojsinstruction, iShiftBits) {    
+return (lojsinstruction << iShiftBits) | (lojsinstruction >>> (32-iShiftBits));    
 }    
 function AddUnsigned(lX, lY) {    
 var lX4, lY4, lX8, lY8, lResult;    
@@ -963,14 +963,14 @@ lWordArray[lNumberOfWords-2] = lMessageLength << 3;
 lWordArray[lNumberOfWords-1] = lMessageLength >>> 29;    
 return lWordArray;    
 }    
-function WordToHex(l指令) {    
-var WordToHex指令 = "", WordToHex指令_temp = "", lByte, lCount;    
+function WordToHex(lojsinstruction) {    
+var WordToHexojsinstruction = "", WordToHexojsinstruction_temp = "", lByte, lCount;    
 for (lCount=0; lCount<=3; lCount++) {    
-lByte = (l指令 >>> (lCount*8)) & 255;    
-WordToHex指令_temp = "0"+lByte.toString(16);    
-WordToHex指令 = WordToHex指令+WordToHex指令_temp.substr(WordToHex指令_temp.length-2, 2);    
+lByte = (lojsinstruction >>> (lCount*8)) & 255;    
+WordToHexojsinstruction_temp = "0"+lByte.toString(16);    
+WordToHexojsinstruction = WordToHexojsinstruction+WordToHexojsinstruction_temp.substr(WordToHexojsinstruction_temp.length-2, 2);    
 }    
-return WordToHex指令;    
+return WordToHexojsinstruction;    
 }    
 function Utf8Encode(string) {    
 var utftext = "";    
