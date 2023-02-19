@@ -1,6 +1,6 @@
 {
   "name": "picencrypt",
-  "version": "1.2.1",
+  "version": "1.2.3",
   "description": "picture encrypt",
   "main": "main.js",
   "scripts": {
@@ -14,7 +14,8 @@
     "@electron-forge/maker-rpm": "^6.0.4",
     "@electron-forge/maker-squirrel": "^6.0.4",
     "@electron-forge/maker-zip": "^6.0.4",
-    "electron": "^19.0.0"
+    "electron": "^19.0.0",
+    "electron-prebuilt-compile": "^8.2.0"
   },
   "author": "PicEncrypt",
   "license": "GPL-3.0-or-later",
